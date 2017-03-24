@@ -8,7 +8,8 @@ public static void main(String[] args) {
 
     try {
         connection = new RConnection();
-        connection.eval("source('C:\\\\New folder\\\\MyFirst.r')");
+        //connection.eval("source('C:\\\\New folder\\\\MyFirst.r')");
+	 //commented out the source parameter.
         int num1=10;
         int num2=20;
         int sum=connection.eval("myAdd("+num1+","+num2+")").asInteger();
